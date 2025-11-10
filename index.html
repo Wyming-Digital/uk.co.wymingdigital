@@ -2,28 +2,40 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Home - Wyming Digital</title>
-  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wyming Digital</title>
+  <style>
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      text-align: center;
+      font-family: Arial, sans-serif;
+      background: #fdfdfd;
+    }
+
+   
+
+    hr {
+      width: 100%;
+    }
+
+    .footer {
+      padding: 10px 0;
+      font-size: 14px;
+
+    }
+  </style>
 </head>
 <body>
-  <div id="header"></div>
+  <div>
+    <h1>WYMING DIGITAL</h1>
+    <hr>
+    <p>This site is currently under construction. Please come back later.</p>
+  </div>
 
-  <main>
-    <h2>Welcome to Wyming Digital</h2>
-    <p>This is your homepage content.</p>
-  </main>
-
-  <div id="footer"></div>
-
-  <script>
-    // Load header and footer
-    fetch("header.html")
-      .then(res => res.text())
-      .then(html => document.getElementById("header").innerHTML = html);
-
-    fetch("footer.html")
-      .then(res => res.text())
-      .then(html => document.getElementById("footer").innerHTML = html);
-  </script>
+  <p class="footer">This site does not collect any personal data or use tracking cookies.</p>
 </body>
 </html>
